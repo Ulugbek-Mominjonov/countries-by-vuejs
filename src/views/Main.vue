@@ -1,15 +1,17 @@
 <template>
-  <div class="container main-container">
-    <form class="search-form" method="GET">
-      <BaseInput class="input search" type="text" placeholder="Search for a country"/>
-      <SelectInput name="region-select"/>
-    </form>
-    <section class="flags">
-      <ul class="flag-list">
-        <CountryCard v-for="country in sortedCountries" :key="country.name" :country="country"/>
-      </ul>
-    </section>
-  </div>
+  <main>
+    <div class="container main-container">
+      <form class="search-form" method="GET">
+        <BaseInput class="input search" type="text" placeholder="Search for a country"/>
+        <SelectInput name="region-select"/>
+      </form>
+      <section class="flags">
+        <ul class="flag-list">
+          <CountryCard v-for="country in sortedCountries" :key="country.name" :country="country"/>
+        </ul>
+      </section>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -50,7 +52,7 @@ import SelectInput from '@/components/SelectInput.vue';
   padding-bottom: 18px;
   padding-right: 18px;
   border: none;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
   border-radius: 5px;
 }

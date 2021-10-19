@@ -34,7 +34,7 @@
   flex-direction: column;
   align-items: flex-start;
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 5px;
   color: #111517;
 }
@@ -42,6 +42,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  object-fit: cover;
 }
 .flag-info-box{
   padding: 24px;

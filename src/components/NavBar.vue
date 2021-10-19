@@ -2,14 +2,18 @@
   <header class="site-header">
     <div class="container site-header__container">
       <router-link to="/" class="site-logo">Where in the world?</router-link>
-      <button class="toggle-button" type="button">Dark Mode</button>
+      <button class="toggle-button" type="button" @click="darkMode">Dark Mode</button>
     </div>
   </header>
 </template>
 
 <script>
   export default {
-    
+    methods: {
+      darkMode() {
+        document.body.classList.toggle('dark')
+      }
+    }
   }
 </script>
 

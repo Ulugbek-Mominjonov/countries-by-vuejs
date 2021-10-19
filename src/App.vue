@@ -48,4 +48,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* dark mode  */
+.dark .site-logo, .dark .toggle-button,.dark main .flag-item {
+  color: #fff;
+}
+.dark .site-header, .dark .input.search, .dark .input.region, .dark main .flag-item {
+  background-color: #2B3844;
+}
+.dark .input.search::placeholder, .dark .input.region {
+  color: #fff
+}
+.dark .input.search {
+  background-image: url("./assets/search_dark.svg");
+}
+.dark .toggle-button::before {
+  background-image: url(./assets/dark.png);
+}
+.dark main {
+  background: #202C36;;
+}
+/* .dark {
+  background-image: url(./assets/search_dark.svg);
+} */
 </style>
