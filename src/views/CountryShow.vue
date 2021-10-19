@@ -74,7 +74,7 @@ import { mapState } from 'vuex';
 .back-button{
   display: flex;
   align-items: center;
-  padding: 0;
+  padding:  10px 35px;
   margin: 0;
   font-family: "Nunito Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -82,7 +82,9 @@ import { mapState } from 'vuex';
   line-height: 20px;
   color: #111517;
   border: none;
-  background: transparent;
+  background: #fff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+  border-radius: 6px;
 }
 .back-button::before {
   content: "";
@@ -100,7 +102,8 @@ import { mapState } from 'vuex';
   margin-top: 50px;
 }
 .country-info__img {
-  margin-right: 30px;
+  margin-right: 40px;
+  object-fit: cover;
 }
 .country-info__text {
   width: 600px;
@@ -170,5 +173,67 @@ import { mapState } from 'vuex';
   color: #111517;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
   border-radius: 2px;
+}
+
+@media screen and (max-width: 1100px) {
+  .country-info {
+    /* flex-wrap: wrap; */
+  }
+  .country-info__img {
+    width: 45%;
+    height: auto;
+  }
+  .country-info__text {
+    width: 50%;
+  }
+  .country-info__details {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 900px) {
+  .country-info {
+    /* flex-wrap: wrap; */
+  }
+  .country-info__img {
+    width: 48%;
+    height: auto;
+  }
+  .country-info__text {
+    width: 47%;
+  }
+  .country-info__details {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .country-info {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .country-info__img {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+  .country-info__text {
+    width: 80%;
+  }
+  .country-info__details, .country-info__border-countries {
+    flex-wrap: wrap;
+  }
+  .country-info__border-title {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .country-info__img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+  .country-info__text {
+    width: 100%;
+  }
 }
 </style>
