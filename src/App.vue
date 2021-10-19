@@ -59,7 +59,7 @@ body.dark {
 .dark .site-header, .dark .input.search, .dark .input.region, .dark main .flag-item, .dark .country-section .back-button, .dark .borders-list > li {
   background-color: #2B3844;
 }
-.dark .input.search::placeholder, .dark .input.region, .dark select option, .dark .country-info__title, .dark .country-info__item, .dark .country-info__border-title, .dark .borders-list > li {
+.dark .input.search, .dark .input.search::placeholder, .dark .input.region, .dark select option, .dark .country-info__title, .dark .country-info__item, .dark .country-info__border-title, .dark .borders-list > li {
   color: #fff !important;
 }
 .dark .input.search {
