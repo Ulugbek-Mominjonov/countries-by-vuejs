@@ -222,6 +222,12 @@ import { mapState } from 'vuex';
   .country-info__details, .country-info__border-countries {
     flex-wrap: wrap;
   }
+  .country-info__details {
+    margin-bottom: 37px;
+  }
+  .country-info__list--left {
+    margin-bottom: 15px;
+  }
   .country-info__border-title {
     margin-bottom: 16px;
   }
