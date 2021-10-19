@@ -103,7 +103,6 @@ import { mapState } from 'vuex';
 }
 .country-info__img {
   margin-right: 40px;
-  object-fit: cover;
 }
 .country-info__text {
   width: 600px;
