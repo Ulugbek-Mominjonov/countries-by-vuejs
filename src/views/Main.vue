@@ -34,6 +34,7 @@ import SelectInput from '@/components/SelectInput.vue';
   }
 </script>
 
+<!--style -->
 <style scoped>
 .main-container {
   padding-top: 48px;
